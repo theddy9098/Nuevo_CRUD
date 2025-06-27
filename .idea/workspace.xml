@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="969baecd-17f4-4a1a-aaf0-59b46d587350" name="Changes" comment="Primer paso para la creacion del crud(Estructura)">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Proyacto_final/src/main/java/org/CRUD_BD/Infraestrucura/Confi_BD/Conexion_BD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Proyacto_final/src/main/java/org/CRUD_BD/Infraestrucura/Persistente/UsuarioRepositoryimpl.java" afterDir="false" />
+    <list default="true" id="969baecd-17f4-4a1a-aaf0-59b46d587350" name="Changes" comment="implementacion de las conexion par la base de datos">
+      <change afterPath="$PROJECT_DIR$/Proyacto_final/src/main/java/org/CRUD_BD/Aplicacion/UsuarioRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proyacto_final/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Proyacto_final/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proyacto_final/src/main/java/org/CRUD_BD/Domain/Entity/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/Proyacto_final/src/main/java/org/CRUD_BD/Domain/Entity/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proyacto_final/src/main/java/org/CRUD_BD/Infraestrucura/Confi_BD/Conexion_BD.java" beforeDir="false" afterPath="$PROJECT_DIR$/Proyacto_final/src/main/java/org/CRUD_BD/Infraestrucura/Confi_BD/Conexion_BD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proyacto_final/src/main/java/org/CRUD_BD/Infraestrucura/Persistente/UsuarioRepositoryimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Proyacto_final/src/main/java/org/CRUD_BD/Infraestrucura/Persistente/UsuarioRepositoryimpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proyacto_final/src/main/java/org/CRUD_BD/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Proyacto_final/src/main/java/org/CRUD_BD/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +38,9 @@
     &quot;accountId&quot;: &quot;43d21a98-c52f-4673-b05b-4bd2a96c06dd&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -50,25 +52,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Debug",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/teddy/Nuevo_CRUD/Proyacto_final/src/main/java/org/CRUD_BD/Main.java",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Debug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/teddy/Nuevo_CRUD/Proyacto_final/src/main/java/org/CRUD_BD/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -85,7 +87,8 @@
       <option name="presentableId" value="Default" />
       <updated>1750801841400</updated>
       <workItem from="1750801843664" duration="1694000" />
-      <workItem from="1750803608314" duration="5455000" />
+      <workItem from="1750803608314" duration="5868000" />
+      <workItem from="1750985625594" duration="2907000" />
     </task>
     <task id="LOCAL-00001" summary="Primer paso para la creacion del crud(Estructura)">
       <option name="closed" value="true" />
@@ -95,7 +98,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750802738283</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="implementacion de las conexion par la base de datos">
+      <option name="closed" value="true" />
+      <created>1750813499995</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1750813499995</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,7 +114,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Primer paso para la creacion del crud(Estructura)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Primer paso para la creacion del crud(Estructura)" />
+    <MESSAGE value="implementacion de las conexion par la base de datos" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementacion de las conexion par la base de datos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

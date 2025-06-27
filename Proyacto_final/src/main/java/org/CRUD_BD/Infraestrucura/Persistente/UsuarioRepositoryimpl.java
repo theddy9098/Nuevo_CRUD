@@ -1,5 +1,6 @@
 package org.CRUD_BD.Infraestrucura.Persistente;
 
+import org.CRUD_BD.Aplicacion.UsuarioRepository;
 import org.CRUD_BD.Domain.Entity.Usuario;
 import org.CRUD_BD.Infraestrucura.Confi_BD.Conexion_BD;
 
@@ -8,7 +9,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class UsuarioRepositoryimpl implements UsuarioRepository {
+public class UsuarioRepositoryimpl extends UsuarioRepository {
 
     @Override
     public void save(Usuario usuario) {
